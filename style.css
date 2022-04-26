@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background: #0a192f;
+}
+
+img {
+  width: 10%;
+  margin-bottom: 100px;
+  animation: key 2s ease-in-out infinite alternate;
+  animation-timing-function: linear;
+  transform-origin: bottom;
+
+  user-select: none;
+}
+
+label {
+  position: relative;
+}
+
+label input {
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  background: transparent;
+
+  padding: 1rem 19.2px;
+  min-width: 384px;
+
+  border-radius: 4px;
+  border: 2px solid #1b2e4a;
+
+  transition: border-color 0.3s ease;
+}
+
+label input::selection {
+  background: #64feda;
+}
+
+label p {
+  color: #f9f9f9;
+  font-size: 1rem;
+  user-select: none;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    sans-serif;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  margin-left: 12px;
+  padding: 0 6.4px;
+
+  background: #0a192f;
+
+  transition: top 0.2s, font-size 0.2s, color 0.2s;
+}
+
+label input:not(:placeholder-shown) {
+  border-color: #64feda;
+}
+
+label input:not(:placeholder-shown) + p {
+  top: 0;
+  font-size: calc(14.4 / 16 * 1rem);
+  color: #57dbbc;
+}
+
+label input:placeholder-shown + p {
+  color: #1b2e4a;
+}
+
+button {
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  user-select: none;
+
+  margin-top: 19px;
+  padding: 16px 19.2px;
+  min-width: 384px;
+
+  border-radius:4px;
+  background: #f9f9f9;
+  border: 2px solid #f9f9f9;
+  color: #0a192f;
+
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+/* Animation */
+
+@keyframes key {
+  from {
+    transform: translateY(1.5);
+  }
+
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+
+/* Footer */
+
+.footer {
+  position: absolute;
+top: 880px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+  }
+  
+  .footer-link,
+  .footer-link:visited {
+	text-decoration: none;
+	color:#fff;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	transition: all 0.3s ease;
+	display: inline-block;
+	position: relative;
+  }
+ 
+  
+  .footer-link:hover {
+	transition: all 0.3s ease;
+  color: #64feda;
+  }
+  
+/* Media Query */
+
+@media (max-width: 27.875rem) {
+  label input {
+    min-width: 300px;
+  }
+
+  button {
+    min-width: 300px;
+  }
+}
