@@ -15,7 +15,5 @@ This was just a creative project. The color theme is green/turquoise: like an "T
 
 
 
-https://user-images.githubusercontent.com/71933266/170868865-0e52337d-5528-401c-ad52-d6364a52e7b4.mp4
-
-
+https://user-images.githubusercontent.com/71933266/174468610-a96240a1-175a-41cd-a75a-467fec22400d.mp4
 
