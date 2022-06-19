@@ -1,16 +1,11 @@
-// SELECTOR
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 
-// EVENT
 button.addEventListener("click", () => {
   input.value = generatePassword(16);
 });
 
-// FUNCTION
-
 function generatePassword(length = 16) {
-  // Generated Characters as String
   const charset =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijlkmnopqrstuvwxyz0123456789@#$";
 
