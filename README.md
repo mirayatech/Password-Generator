@@ -10,8 +10,6 @@ This was just a creative project. The color theme is green/turquoise: like an "T
 
 ## How it looks 🎥
 
-**Live:** https://psgenerator.netlify.app/
-
 
 
 
